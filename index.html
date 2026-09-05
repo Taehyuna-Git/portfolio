@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="정태현의 포트폴리오" />
+    <title>정태현 | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="nav container">
+      <a href="#home" class="logo">TH<span>.</span></a>
+      <nav aria-label="주요 메뉴">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="nav-link clock" id="clock" aria-label="현재 날짜와 시간"></span>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <p class="eyebrow"><span class="pulse"></span> 연습용 사이트입니다.</p>
+        <div class="hero-title">
+          <h1>저를 <em>소개합니다.</em></h1>
+          <p class="intro">아직 구겨져있는 꿈을 펼치기 위한 준비를 하고있습니다.<br />기다려주세요!</p>
+        </div>
+        <div class="hero-bottom">
+          <a class="scroll" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
+          <div class="location">BASED IN<br /><strong>SEOUL, KOREA</strong></div>
+        </div>
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      </section>
+
+      <section id="about" class="about container section">
+        <div class="section-label">01 / ABOUT ME</div>
+        <div class="about-content">
+          <div class="portrait" aria-label="프로필 이니셜">TH</div>
+          <div>
+            <h2>배우며<br /><i>만들고 있습니다.</i></h2>
+            <p>아직은 하나씩 배우고 있는 초보 개발자입니다. 작은 아이디어를 직접 화면으로 만들어 보고, 부족한 부분은 기록하며 조금씩 더 나은 결과물을 만들어가고 있습니다.</p>
+            <div class="skills">
+              <span>Product Design</span><span>UI / UX</span><span>Frontend</span><span>Branding</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="work section">
+        <div class="container">
+          <div class="work-heading">
+            <div class="section-label">02 / SELECTED WORK</div>
+            <h2>만든 것들</h2>
+            <a href="https://github.com/Taehyuna-Git" target="_blank" rel="noreferrer">VIEW GITHUB <span>↗</span></a>
+          </div>
+          <div class="projects">
+            <a class="project project-a" href="#" aria-label="프로젝트 A 자세히 보기">
+              <div class="project-visual"><span>01</span><div class="mock-window"><b>Balance</b><small>오늘의 나를 기록하세요</small><div class="chart"></div></div></div>
+              <div class="project-info"><div><h3>Balance</h3><p>Wellness app · 2024</p></div><span>↗</span></div>
+            </a>
+            <a class="project project-b" href="#" aria-label="프로젝트 B 자세히 보기">
+              <div class="project-visual"><span>02</span><div class="type-sample">do<br /><i>more.</i></div></div>
+              <div class="project-info"><div><h3>More Studio</h3><p>Brand identity · 2024</p></div><span>↗</span></div>
+            </a>
+            <article class="project project-c game-project">
+              <button type="button" class="project-visual game-open" aria-label="Game ARCHIVE 열기"><span>03</span><div class="game-symbol">✦<small>GAME<br />ARCHIVE</small></div></button>
+              <div class="project-info"><div><h3>Game ARCHIVE</h3><p>Play &amp; screenshots</p></div><button type="button" id="gameToggle" aria-expanded="false">열기 <span>↓</span></button></div>
+              <div class="game-drawer" id="gameDrawer" hidden>
+                <p class="game-help">게임을 선택하면 기록해 둔 스크린샷을 볼 수 있습니다.</p>
+                <div class="game-tabs" role="tablist">
+                  <button type="button" class="game-tab active" role="tab" data-game="maple">메이플스토리</button>
+                  <button type="button" class="game-tab" role="tab" data-game="wuthering">명조</button>
+                  <button type="button" class="game-tab" role="tab" data-game="zenless">젠레스 존 제로</button>
+                </div>
+                <div class="screenshot-grid game-gallery" data-gallery="maple"><p>메이플스토리 스크린샷을 준비 중입니다.</p><!-- 사진 추가: <img src="images/maple-01.jpg" alt="메이플스토리 스크린샷"> --></div>
+                <div class="screenshot-grid game-gallery" data-gallery="wuthering" hidden><p>명조 스크린샷을 준비 중입니다.</p><!-- 사진 추가: <img src="images/wuthering-01.jpg" alt="명조 스크린샷"> --></div>
+                <div class="screenshot-grid game-gallery" data-gallery="zenless" hidden><p>젠레스 존 제로 스크린샷을 준비 중입니다.</p><!-- 사진 추가: <img src="images/zenless-01.jpg" alt="젠레스 존 제로 스크린샷"> --></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container section">
+        <div class="section-label">03 / CONTACT</div>
+        <p>새로운 프로젝트나<br />재미있는 이야기가 있다면,</p>
+        <a href="mailto:taehyuna.github@gmail.com">taehyuna.github@gmail.com <span>↗</span></a>
+        <div class="socials">
+          <a href="https://github.com/Taehyuna-Git" target="_blank" rel="noreferrer">깃허브 <span>↗</span></a>
+          <a href="https://www.instagram.com/tae._.hyuna05?igsi=MTQydGxqZ2o1ZDZvcQ%3D%3D&amp;utm_source=qr" target="_blank" rel="noreferrer">인스타 <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="container"><span>© 2024 JUNG TAEHYUN</span><span>DESIGNED WITH CARE</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
