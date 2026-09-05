@@ -30,5 +30,14 @@
 .screenshot-grid[hidden] { display:none; }
 .screenshot-grid p { grid-column:1/-1; color:#96958f; align-self:center; text-align:center; font-size:11px; }
 .screenshot-grid img { width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:8px; }
+.game-gallery img { cursor:zoom-in; transition:transform .2s,filter .2s; }
+.game-gallery img:hover { transform:translateY(-3px); filter:brightness(1.08); }
+.game-gallery img:focus-visible { outline:2px solid var(--lime); outline-offset:3px; }
+.lightbox { position:fixed; inset:0; z-index:100; display:grid; place-items:center; padding:clamp(18px,4vw,56px); background:rgba(10,10,10,.88); backdrop-filter:blur(8px); }
+.lightbox[hidden] { display:none; }
+.lightbox img { display:block; max-width:min(1100px,92vw); max-height:86vh; width:auto; height:auto; object-fit:contain; border-radius:10px; box-shadow:0 22px 70px rgba(0,0,0,.5); }
+.lightbox-close { position:fixed; top:20px; right:24px; width:44px; height:44px; cursor:pointer; border:1px solid rgba(255,255,255,.55); border-radius:50%; background:rgba(20,20,20,.65); color:#fff; font:300 30px/1 sans-serif; }
+.lightbox-close:hover { background:var(--lime); color:var(--ink); border-color:var(--lime); }
+.lightbox-open { overflow:hidden; }
 .socials a { border-radius:999px; }
 @media (max-width:700px) { .game-project .project-visual { min-height:280px; } .game-symbol { font-size:70px; } }

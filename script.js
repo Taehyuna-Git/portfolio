@@ -31,3 +31,40 @@ gameTabs.forEach((tab) => {
     galleries.forEach((gallery) => { gallery.hidden = gallery.dataset.gallery !== tab.dataset.game; });
   });
 });
+
+const lightbox = document.querySelector('#lightbox');
+const lightboxImage = document.querySelector('#lightboxImage');
+const lightboxClose = document.querySelector('#lightboxClose');
+
+function closeLightbox() {
+  lightbox.hidden = true;
+  lightboxImage.src = '';
+  document.body.classList.remove('lightbox-open');
+}
+
+document.querySelectorAll('.game-gallery img').forEach((image) => {
+  image.tabIndex = 0;
+  image.setAttribute('role', 'button');
+  image.setAttribute('aria-label', `${image.alt} 확대 보기`);
+
+  const openLightbox = () => {
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+    lightbox.hidden = false;
+    document.body.classList.add('lightbox-open');
+    lightboxClose.focus();
+  };
+
+  image.addEventListener('click', openLightbox);
+  image.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') openLightbox();
+  });
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (event) => {
+  if (event.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
+});
