@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="신구대학교 동관·서관 학생식당의 주간 식단을 확인하세요." />
+    <meta name="theme-color" content="#d4f562" />
+    <title>오늘의 신구 식단 | 정태현 Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="meal.css" />
+  </head>
+  <body>
+    <header class="meal-nav">
+      <a class="back" href="index.html#work" aria-label="포트폴리오로 돌아가기">← PORTFOLIO</a>
+      <span>SHINGU UNIVERSITY · WEEKLY MENU</span>
+    </header>
+
+    <main>
+      <section class="meal-heading">
+        <p class="eyebrow"><span></span> 매일 자동으로 확인하는 교내 식단</p>
+        <h1>오늘 뭐<br /><em>먹지?</em></h1>
+        <p class="lead">식당과 날짜를 선택하면 조식, 중식, 분식 메뉴를 확인할 수 있습니다.</p>
+      </section>
+
+      <section class="menu-board" aria-labelledby="menuTitle">
+        <div class="board-top">
+          <div>
+            <p class="label">CAFETERIA</p>
+            <h2 id="menuTitle">식당을 선택하세요</h2>
+            <p class="official-name" id="officialName"></p>
+          </div>
+          <div class="updated" id="updatedAt">식단 불러오는 중</div>
+        </div>
+
+        <div class="cafeteria-tabs" id="cafeteriaTabs" role="tablist" aria-label="학생식당 선택"></div>
+        <div class="day-tabs" id="dayTabs" role="tablist" aria-label="날짜 선택"></div>
+        <div class="meal-grid" id="mealGrid" aria-live="polite">
+          <div class="loading">식단을 불러오고 있습니다.</div>
+        </div>
+
+        <div class="source-row">
+          <span id="weekRange"></span>
+          <a href="https://www.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=1630" target="_blank" rel="noreferrer">학교 공식 식단표 ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 JUNG TAEHYUN</span><span>MENU DATA · SHINGU UNIVERSITY</span></footer>
+    <script src="data/meals.js"></script>
+    <script src="meal.js"></script>
+  </body>
+</html>
