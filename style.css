@@ -41,3 +41,20 @@
 .lightbox-open { overflow:hidden; }
 .socials a { border-radius:999px; }
 @media (max-width:700px) { .game-project .project-visual { min-height:280px; } .game-symbol { font-size:70px; } }
+
+/* Shingu meal project */
+.meal-project { grid-column:1 / 3; }
+.meal-project .project-visual { background:#d4f562; color:#171915; }
+.meal-preview { width:min(540px,72%); padding:30px; border:1px solid rgba(20,20,20,.34); border-radius:24px; background:#f5f4ef; box-shadow:16px 18px 0 #1c1c1b; transform:rotate(-2deg); }
+.meal-preview-top { display:flex; justify-content:space-between; align-items:baseline; gap:18px; }
+.meal-preview-top b { font-size:clamp(22px,3vw,38px); letter-spacing:-.07em; }
+.meal-preview-top small { font:10px "DM Mono",monospace; }
+.meal-preview-tabs { display:flex; gap:7px; margin:24px 0 20px; }
+.meal-preview-tabs i { padding:7px 14px; border:1px solid #1c1c1b; border-radius:999px; font:500 10px "Noto Sans KR",sans-serif; font-style:normal; }
+.meal-preview-tabs i:first-child { background:#1c1c1b; color:var(--lime); }
+.meal-preview-lines { display:grid; gap:9px; }
+.meal-preview-lines span { display:block; height:8px; border-radius:999px; background:#d7d6d0; }
+.meal-preview-lines span:nth-child(1) { width:88%; }
+.meal-preview-lines span:nth-child(2) { width:67%; }
+.meal-preview-lines span:nth-child(3) { width:76%; }
+@media (max-width:700px) { .meal-project { grid-column:auto; } .meal-preview { width:76%; padding:20px; box-shadow:10px 12px 0 #1c1c1b; } .meal-preview-top { align-items:flex-start; flex-direction:column; gap:5px; } .meal-preview-tabs { margin:15px 0; } }
