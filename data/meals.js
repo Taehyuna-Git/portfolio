@@ -1,6 +1,6 @@
 window.SHINGU_MEALS = {
   "sourceUrl": "https://www.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=1630",
-  "fetchedAt": "2026-09-06T21:28:06.478Z",
+  "fetchedAt": "2026-09-07T21:30:17.136Z",
   "week": {
     "start": "2026.09.07",
     "end": "2026.09.13"
@@ -269,7 +269,7 @@ window.SHINGU_MEALS = {
             {
               "name": "분식",
               "items": [
-                "크림떡볶이",
+                "스텔라떡볶이",
                 "튀김",
                 "단무지"
               ]
