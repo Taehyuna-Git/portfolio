@@ -1,6 +1,6 @@
 window.SHINGU_MEALS = {
   "sourceUrl": "https://www.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=1630",
-  "fetchedAt": "2026-10-12T00:37:01.982Z",
+  "fetchedAt": "2026-10-13T02:36:27.841Z",
   "week": {
     "start": "2026.10.12",
     "end": "2026.10.18"
@@ -62,6 +62,7 @@ window.SHINGU_MEALS = {
             {
               "name": "중식",
               "items": [
+                "*Chef Event*",
                 "수제함박스테이크",
                 "콩나물국",
                 "쌀밥",
