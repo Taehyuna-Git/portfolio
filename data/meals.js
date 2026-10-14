@@ -1,6 +1,6 @@
 window.SHINGU_MEALS = {
   "sourceUrl": "https://www.shingu.ac.kr/cms/FR_CON/index.do?MENU_ID=1630",
-  "fetchedAt": "2026-10-13T02:36:27.841Z",
+  "fetchedAt": "2026-10-14T00:21:20.596Z",
   "week": {
     "start": "2026.10.12",
     "end": "2026.10.18"
